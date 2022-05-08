@@ -10,13 +10,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: Center(
-          child: Text('My name is Tom.'),
-        ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.blue,
-          child: Icon(Icons.add),
-          onPressed: () {},
+        body: SafeArea(
+          child: Container(
+            height: 100.0,
+            width: 100.0,
+            margin: EdgeInsets.fromLTRB(30.0, 10.0, 50.0, 20.0),
+            padding: EdgeInsets.all(20.0),
+            color: Colors.blue,
+            child: Text('Hello'),
+          ),
         ),
       ),
     );
